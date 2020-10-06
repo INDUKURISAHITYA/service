@@ -1,0 +1,46 @@
+<div class="example-container">
+    <h2>Registration form</h2>
+    <form [formGroup]="options" (ngSubmit)="onSubmit()" novalidate>
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your Name</mat-label>
+            <input matInput placeholder="Enter your name" [formControl]="name" required>
+           </mat-form-field>&nbsp;
+              <button mat-raised-button (click)=" addname()" >Add-Name</button>
+        <div formArrayName="alternateName" *ngFor="let name of alternateName.controls">
+            <mat-form-field appearance="fill"  >
+            <input matInput placeholder="Enter your alternateEmail" [formControl]="name" required >
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Enter your email</mat-label>
+                <input matInput placeholder="pat@example.com" [formControl]="email" required>
+            </mat-form-field> &nbsp;
+            <button mat-raised-button (click)="addemail()" >Add-email</button>
+        </div>
+        <div formArrayName="alternateEmail" *ngFor="let email of alternateEmail.controls">
+            <mat-form-field appearance="fill"  >
+            <input matInput placeholder="Enter your alternateEmail" [formControl]="email" required >
+            </mat-form-field>
+        </div>
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your Mobile Number</mat-label>
+            <input matInput placeholder="please enter Mobile Number" [formControl]="mobile" required>
+        </mat-form-field> &nbsp;
+        <button mat-raised-button (click)="addmobile()" >Add-MobNo</button>
+        <div formArrayName="alternatemobile" *ngFor="let mobile of alternatemobile.controls">
+            <mat-form-field appearance="fill"  >
+            <input matInput placeholder="Enter your alternate Mobile Number" [formControl]="mobile" required >
+            </mat-form-field>
+        </div>
+
+        <div>
+            <button mat-raised-button type="submit" color="primary" [disabled]="options.invalid">Submit</button>
+        </div>
+    </form>
+<div>
+
+
+  {{options.value|json}}

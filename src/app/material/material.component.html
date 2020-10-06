@@ -1,0 +1,10 @@
+<ol>
+    <li>
+      <button mat-raised-button (click)="openDialog()">Pick one</button>
+    </li>
+    <li *ngIf="output">
+      Your name <i>{{output.name}}</i><br>
+      Your Fathername<i>{{output.father}}</i>
+    </li>
+    
+  </ol>
