@@ -41,7 +41,8 @@ export class FormArray1Component implements OnInit {
        let data:any = this.myForm.value;
        this.router.navigate(['/bind'],{
          queryParams:{data:JSON.stringify(data)}
-       })
+       });
+     
   }
 
 }

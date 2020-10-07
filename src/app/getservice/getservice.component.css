@@ -1,0 +1,13 @@
+.mat-card
+{
+    display:inline-block;
+    width:500px;
+    height:100px;
+    margin: 20px;
+    color: rosybrown;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: seagreen;
+}

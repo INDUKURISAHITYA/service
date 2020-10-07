@@ -1,0 +1,8 @@
+
+<mat-card *ngIf="error">"Please check your internet Connection"</mat-card>
+
+<mat-card *ngFor="let data of url">
+    <mat-card-title>{{data.id}}</mat-card-title>
+    <mat-card-subtitle>{{data.title|slice:1:60}}</mat-card-subtitle>
+    <mat-card-content>{{data.body|slice:1:60}}</mat-card-content>
+</mat-card>

@@ -13,6 +13,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import { FormarrayComponent } from './formarray/formarray.component';
 
 import { FormArray1Component } from './form-array1/form-array1.component';
+import { GetserviceComponent } from './getservice/getservice.component';
 
 
 
@@ -23,7 +24,8 @@ import { FormArray1Component } from './form-array1/form-array1.component';
     MaterialComponent,
     MyDialogComponent,
     FormarrayComponent,
-    routers
+    routers,
+    GetserviceComponent
   ],
   imports: [
     BrowserModule,

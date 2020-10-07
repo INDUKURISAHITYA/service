@@ -1,5 +1,25 @@
-.mat-table
+.mat-table,button
 {
     width:50%;
     margin: 50px;
 }
+th
+{
+    font-size: 20px;
+    text-align: center;
+    color:olivedrab;
+}
+td
+{
+    font-size: 17px;
+    color: orange;
+}
+
+h2
+{
+    margin-left: 60px;
+    color: pink;
+    font-weight: 500;
+    margin-top: 60px;
+}
+
